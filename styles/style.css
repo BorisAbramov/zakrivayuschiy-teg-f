@@ -17,4 +17,30 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: 'wght' var(--main-card-font-weight, 400);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid currentColor;
+  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 25px;
+  font-family: var(--accent-font), fantasy;
+  background-color: var(--bg-color);
+}
+
+.header__logo {
+  margin-block-end: 20px;
+  font-size: var(--logo-font-size, 1.5vw);
+  text-align: center;
+  color: inherit;
+}
+
+.header__title {
+  margin-block-end: 25px;
+  font-size: var(--title-font-size, 0.8vw);
+  text-align: center;
+  text-transform: uppercase;
 }
