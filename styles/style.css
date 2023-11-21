@@ -71,6 +71,11 @@
 
 .page-title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  text-decoration: none;
+}
+
+.page-title:focus {
+  outline: none;
 }
 
 .header {
@@ -363,5 +368,6 @@
   .card__img-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--page-background-color, #ffffff);
+    text-stroke: 1px var(--page-background-color, #ffffff);
   }
 }
