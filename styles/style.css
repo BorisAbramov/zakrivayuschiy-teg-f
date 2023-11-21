@@ -102,7 +102,7 @@
 
 .theme-menu__list {
   display: grid;
-  gap: 8px;
+  gap: 9px;
   padding-inline-start: 20px;
 }
 
@@ -256,8 +256,12 @@
 .button {
   position: relative;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid var(--text-color, #000000);
-  padding: 10px 36px;
+  /* padding: 10px 36px; */
+  padding: 9px 17px;
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
   font-size: 14px;
   text-transform: inherit;
@@ -265,6 +269,13 @@
   transition: box-shadow 0.3s ease;
   cursor: pointer;
   appearance: none;
+}
+
+.card__like-button {
+  position: relative;
+  display: flex;
+  min-width: 130px;
+  min-height: 38px;
 }
 
 .button:focus {
@@ -348,7 +359,7 @@
 @media (width < 376px) {
   .modal {
     padding: 28px 34px 28px 40px;
-    max-inline-size: 340px;
+    max-inline-size: 345px;
   }
 
   .button--save {
